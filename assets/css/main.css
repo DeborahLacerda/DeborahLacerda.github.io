@@ -317,7 +317,22 @@ dl,
 table {
   margin-bottom: 2em;
 }
+.ul-inline {
+  display: flex; /* Ativa o layout flexbox */
+  justify-content: space-between; /* Espaçamento uniforme entre os itens */
+  padding-left: 0; /* Remove o padding padrão da lista */
+  list-style-type: none; /* Remove os bullets */
+}
 
+.ul-inline li {
+  display: inline-block;
+  margin-right: 20px; /* Espaçamento entre os itens da lista */
+}
+
+.ul-inline a {
+  text-decoration: none;
+  color: inherit; /* Mantém a cor do texto */
+}
 br.clear {
   clear: both;
 }
@@ -346,17 +361,26 @@ br.clear {
   .container {
     width: 100%;
   }
+  
 }
 
 @media screen and (max-width: 960px) {
   .container {
     width: 100%;
   }
+  
 }
 
 @media screen and (max-width: 736px) {
   .container {
     width: 100%;
+  }
+  .ul-inline {
+    display: block; /* Faz com que os itens fiquem empilhados um abaixo do outro */
+  }
+
+  .ul-inline li {
+    margin-bottom: 10px; /* Espaçamento entre os itens quando empilhados */
   }
 }
 
