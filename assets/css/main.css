@@ -1885,12 +1885,13 @@ article:last-child {
 /* List */
 
 ul {
-  list-style: disc;
-  padding-left: 1em;
+  list-style-type: none; /* Remove os bullets */
+  padding-left: 0; /* Remove o espaçamento da lista */
 }
 
 ul li {
-  padding-left: 0.5em;
+  text-align: left; /* Alinha o texto à esquerda */
+  margin-bottom: 10px; /* Adiciona um espaçamento entre os itens da lista */
 }
 
 ol {
